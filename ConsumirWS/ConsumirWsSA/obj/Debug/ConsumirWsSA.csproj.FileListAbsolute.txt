@@ -1,0 +1,10 @@
+C:\Users\peter\Documents\SA\src\ConsumirWS\ConsumirWsSA\bin\Debug\ConsumirWsSA.exe.config
+C:\Users\peter\Documents\SA\src\ConsumirWS\ConsumirWsSA\bin\Debug\ConsumirWsSA.exe
+C:\Users\peter\Documents\SA\src\ConsumirWS\ConsumirWsSA\bin\Debug\ConsumirWsSA.pdb
+C:\Users\peter\Documents\SA\src\ConsumirWS\ConsumirWsSA\bin\Debug\Newtonsoft.Json.dll
+C:\Users\peter\Documents\SA\src\ConsumirWS\ConsumirWsSA\bin\Debug\Newtonsoft.Json.xml
+C:\Users\peter\Documents\SA\src\ConsumirWS\ConsumirWsSA\obj\Debug\ConsumirWsSA.csprojAssemblyReference.cache
+C:\Users\peter\Documents\SA\src\ConsumirWS\ConsumirWsSA\obj\Debug\ConsumirWsSA.csproj.CoreCompileInputs.cache
+C:\Users\peter\Documents\SA\src\ConsumirWS\ConsumirWsSA\obj\Debug\ConsumirWsSA.csproj.CopyComplete
+C:\Users\peter\Documents\SA\src\ConsumirWS\ConsumirWsSA\obj\Debug\ConsumirWsSA.exe
+C:\Users\peter\Documents\SA\src\ConsumirWS\ConsumirWsSA\obj\Debug\ConsumirWsSA.pdb
