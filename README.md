@@ -3,6 +3,6 @@ _Repositorio para SoftwareAvanzado Primer Semestre 2020 _
 
 ## Comenzando 🚀
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+_Se Realizo la Tarea 1 con Metodos POST y GET._
 
-Mira **Deployment** para conocer como desplegar el proyecto.
+Esta Primera Tarea se Realizo en proyecto de **Consola** 
