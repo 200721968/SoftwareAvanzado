@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WsRestaurante", "WsRestaurante\", "{18AB6E22-EA92-4A15-BFF4-422F1ABBA281}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49750"
+		Debug.AspNetCompiler.PhysicalPath = "WsRestaurante\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49750\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49750"
+		Release.AspNetCompiler.PhysicalPath = "WsRestaurante\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49750\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49750"
+		SlnRelativePath = "WsRestaurante\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ClientePedidos", "ClientePedidos\", "{5F92AB4D-FBDD-4737-BAC6-07B848182B67}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50444"
+		Debug.AspNetCompiler.PhysicalPath = "ClientePedidos\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50444\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50444"
+		Release.AspNetCompiler.PhysicalPath = "ClientePedidos\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50444\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50444"
+		SlnRelativePath = "ClientePedidos\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{18AB6E22-EA92-4A15-BFF4-422F1ABBA281} = {18AB6E22-EA92-4A15-BFF4-422F1ABBA281}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18AB6E22-EA92-4A15-BFF4-422F1ABBA281}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18AB6E22-EA92-4A15-BFF4-422F1ABBA281}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F92AB4D-FBDD-4737-BAC6-07B848182B67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F92AB4D-FBDD-4737-BAC6-07B848182B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01E0FA32-FF06-488E-BFF7-5F53566AB34D}
+	EndGlobalSection
+EndGlobal
