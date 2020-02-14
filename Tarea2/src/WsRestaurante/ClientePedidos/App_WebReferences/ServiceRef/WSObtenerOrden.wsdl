@@ -47,6 +47,16 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="EntregarOrden">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EntregarOrdenResponse">
+        <s:complexType />
+      </s:element>
     </s:schema>
   </wsdl:types>
   <wsdl:message name="HelloWorldSoapIn">
@@ -67,6 +77,12 @@
   <wsdl:message name="ListarOrdenSoapOut">
     <wsdl:part name="parameters" element="tns:ListarOrdenResponse" />
   </wsdl:message>
+  <wsdl:message name="EntregarOrdenSoapIn">
+    <wsdl:part name="parameters" element="tns:EntregarOrden" />
+  </wsdl:message>
+  <wsdl:message name="EntregarOrdenSoapOut">
+    <wsdl:part name="parameters" element="tns:EntregarOrdenResponse" />
+  </wsdl:message>
   <wsdl:portType name="WSObtenerOrdenSoap">
     <wsdl:operation name="HelloWorld">
       <wsdl:input message="tns:HelloWorldSoapIn" />
@@ -79,6 +95,10 @@
     <wsdl:operation name="ListarOrden">
       <wsdl:input message="tns:ListarOrdenSoapIn" />
       <wsdl:output message="tns:ListarOrdenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EntregarOrden">
+      <wsdl:input message="tns:EntregarOrdenSoapIn" />
+      <wsdl:output message="tns:EntregarOrdenSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="WSObtenerOrdenSoap" type="tns:WSObtenerOrdenSoap">
@@ -110,6 +130,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="EntregarOrden">
+      <soap:operation soapAction="http://tempuri.org/EntregarOrden" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="WSObtenerOrdenSoap12" type="tns:WSObtenerOrdenSoap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
@@ -133,6 +162,15 @@
     </wsdl:operation>
     <wsdl:operation name="ListarOrden">
       <soap12:operation soapAction="http://tempuri.org/ListarOrden" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EntregarOrden">
+      <soap12:operation soapAction="http://tempuri.org/EntregarOrden" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
