@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerarOrden">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="platoPrincipal" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cantidadPrincipal" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="acompañamiento" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cantidadAcompaña" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="DireccionEntrega" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerarOrdenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GenerarOrdenResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarOrden">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListarOrdenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarOrdenResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EntregarOrden">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EntregarOrdenResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenerarOrdenSoapIn">
+    <wsdl:part name="parameters" element="tns:GenerarOrden" />
+  </wsdl:message>
+  <wsdl:message name="GenerarOrdenSoapOut">
+    <wsdl:part name="parameters" element="tns:GenerarOrdenResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarOrdenSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarOrden" />
+  </wsdl:message>
+  <wsdl:message name="ListarOrdenSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarOrdenResponse" />
+  </wsdl:message>
+  <wsdl:message name="EntregarOrdenSoapIn">
+    <wsdl:part name="parameters" element="tns:EntregarOrden" />
+  </wsdl:message>
+  <wsdl:message name="EntregarOrdenSoapOut">
+    <wsdl:part name="parameters" element="tns:EntregarOrdenResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WSObtenerOrdenSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarOrden">
+      <wsdl:input message="tns:GenerarOrdenSoapIn" />
+      <wsdl:output message="tns:GenerarOrdenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarOrden">
+      <wsdl:input message="tns:ListarOrdenSoapIn" />
+      <wsdl:output message="tns:ListarOrdenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EntregarOrden">
+      <wsdl:input message="tns:EntregarOrdenSoapIn" />
+      <wsdl:output message="tns:EntregarOrdenSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSObtenerOrdenSoap" type="tns:WSObtenerOrdenSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarOrden">
+      <soap:operation soapAction="http://tempuri.org/GenerarOrden" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarOrden">
+      <soap:operation soapAction="http://tempuri.org/ListarOrden" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EntregarOrden">
+      <soap:operation soapAction="http://tempuri.org/EntregarOrden" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSObtenerOrdenSoap12" type="tns:WSObtenerOrdenSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarOrden">
+      <soap12:operation soapAction="http://tempuri.org/GenerarOrden" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarOrden">
+      <soap12:operation soapAction="http://tempuri.org/ListarOrden" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EntregarOrden">
+      <soap12:operation soapAction="http://tempuri.org/EntregarOrden" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSObtenerOrden">
+    <wsdl:port name="WSObtenerOrdenSoap" binding="tns:WSObtenerOrdenSoap">
+      <soap:address location="http://localhost:49750/WSObtenerOrden.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSObtenerOrdenSoap12" binding="tns:WSObtenerOrdenSoap12">
+      <soap12:address location="http://localhost:49750/WSObtenerOrden.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

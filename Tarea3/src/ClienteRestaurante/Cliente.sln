@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ClienteRestaurante", "ClienteRestaurante\", "{4DC1D7E6-E02A-4EA0-806E-A85E92AD6AF3}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49947"
+		Debug.AspNetCompiler.PhysicalPath = "ClienteRestaurante\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49947\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49947"
+		Release.AspNetCompiler.PhysicalPath = "ClienteRestaurante\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49947\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49947"
+		SlnRelativePath = "ClienteRestaurante\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DC1D7E6-E02A-4EA0-806E-A85E92AD6AF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DC1D7E6-E02A-4EA0-806E-A85E92AD6AF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D3183D4-08BA-4DFE-986F-6C956E01CA4F}
+	EndGlobalSection
+EndGlobal
