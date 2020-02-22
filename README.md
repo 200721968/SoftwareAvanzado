@@ -11,3 +11,8 @@ Esta Primera Tarea se Realizo en proyecto de **Consola**
 _Se Realizo la Tarea 2._
 
  Se Crea un WebService de **Restaurante** y se le crea un Cliente para Ingresar Ordenes y un Cliente para Verificar Ordenes. 
+## Tarea 3 🚀
+
+_Se Realizo la Tarea 3._
+
+ Se Crea un WebService de **Restaurante** y se le crean Clientes para Ingresar Ordenes y un Cliente para Verificar Ordenes otro cliente para entrega de ORdenes y otro cliente para consulta de Ordenes.
